@@ -1,0 +1,5 @@
+decimal=int(input("enter the number:"))
+print("the conversion of decimal number:",decimal,"is:")
+print(bin(decimal),"in_binary")
+print(oct(decimal),"in octal")
+print(hex(decimal),"in hexadecimaal")
