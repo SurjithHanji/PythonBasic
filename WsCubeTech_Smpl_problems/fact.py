@@ -1,13 +1,11 @@
-n=int(input("enter the value for n:"))
-fact=1
-if(n<0):
-    print("not possible")
-elif(n==0) or (n==1):
-    print("factorial of 0 | 1 is",1)
+def fact(n):
+    if n==1:
+        return n
+    else:
+        return n*fact(n-1)
+    
+n=int(input("value for n:"))
+if(n<=0):
+    print("factorial is not exist for n<=0")
 else:
-    for i in range(1,n+1):
-        fact=fact*i
-        i+=1
-        
-
-print("factorial of the number is:",fact)
+    print("factorial of number is:",fact(n))
