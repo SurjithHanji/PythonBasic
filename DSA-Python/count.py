@@ -1,0 +1,11 @@
+n=int(input())
+count=0
+while n>0:
+    count+=1
+    n=n//10
+print(count)
+
+
+from math import *
+def countdigits(num):
+    return int(log10(n)+1)
