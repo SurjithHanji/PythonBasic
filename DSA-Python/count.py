@@ -1,11 +1,14 @@
-n=int(input())
-count=0
-while n>0:
-    count+=1
-    n=n//10
-print(count)
+from collections import Counter
+
+l=[1,2,3,4,5,3,4,2,6,8,8,6,9]
+print(Counter(l))
+
+f=dict()
+for i in range(0,len(l)):
+    if l[i] in f:
+        f[l[i]]+=1
+    else:
+        f[l[i]]=1
+print(f[1])
 
 
-from math import *
-def countdigits(num):
-    return int(log10(n)+1)
